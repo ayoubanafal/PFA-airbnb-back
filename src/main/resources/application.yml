@@ -2,7 +2,7 @@ logging:
   level:
     ROOT: INFO
     org.hibernate.SQL: DEBUG
-    fr.codecake.airbnbcloneback: DEBUG
+    ma.Anafal_Dahhaniback: DEBUG
 
 spring:
   profiles:
@@ -39,12 +39,12 @@ spring:
 server:
   port: 8080
 
-#okta:
-#  oauth2:
-#    issuer: https://airbnb-clone.us.auth0.com/
-#    client-id: ${AUTH0_CLIENT_ID}
-#    client-secret: ${AUTH0_CLIENT_SECRET}
+okta:
+  oauth2:
+    issuer: https://dev-pi70w68dmtszjxp6.us.auth0.com/
+    client-id: DeISBlqxwJDr1C3b6dJf5Qu48O21yyaC
+    client-secret: bIm8iGbNDTOBocZJR_pU960NDQ9aBWGo-FcVSJ4lTwZWpD8zZGXsuYVytNVJy80r
 
 application:
   auth0:
-    role-landlord-id: rol_v1CpFU8josLg8YjC
+    role-landlord-id: rol_qkXAdZGx7QrYtFeh
