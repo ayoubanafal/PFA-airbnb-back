@@ -8,11 +8,11 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/Airbnb
     username: postgres
-    password: yassine
+    password: Admin
   jpa:
     properties:
       hibernate:
         default_schema: airbnb_clone
-  liquibase:
-    contexts: prod
-    default-schema: airbnb_clone
+#  liquibase:
+#    contexts: prod
+#    default-schema: airbnb_clone

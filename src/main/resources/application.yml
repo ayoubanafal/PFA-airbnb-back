@@ -5,11 +5,15 @@ logging:
     ma.Anafal_Dahhaniback: DEBUG
 
 spring:
+
   profiles:
     active: dev
   application:
-    name: airbnb-clone-back
+    name: airbnb-back
   datasource:
+    url: jdbc:postgresql://localhost:5432/Airbnb
+    username: postgres
+    password: Admin
     type: com.zaxxer.hikari.HikariDataSource
     hikari:
       poolName: Hikari
@@ -19,17 +23,18 @@ spring:
       repositories:
         bootstrap-mode: deferred
   jpa:
+
     open-in-view: false
     hibernate:
       ddl-auto: validate
     properties:
       hibernate:
         default_schema: airbnb_clone
-  liquibase:
-    contexts: dev
-    change-log: classpath:db/changelog/master.xml
-    default-schema: airbnb_clone
-    enabled: true
+#  liquibase:
+#    contexts: dev
+#    change-log: classpath:db/changelog/master.xml
+#    default-schema: airbnb_clone
+#    enabled: true
   #    drop-first: true
   servlet:
     multipart:
